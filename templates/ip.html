@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title> cs problems </title>
+        <link type="text/css" href="{{ url_for('static',filename='styles/st.css') }}" rel = "stylesheet"></link>
+     
+        <script>
+            var usrName = "@HttpContext.Current.User.Identity.Name";
+            alert(usrName);
+        </script>
+
+        <script async  src='https://www.google-analytics.com/analytics.js'></script>
+    </head>
+        <body>
+            
+            <input id="username" type="hidden" value="@User.Identity.Name" />
+            <div>
+                <center><h1><u><strong>Problems</strong></u></h1></center>
+                <marquee> welcome to CS problems</marquee> <br/>
+                <form>
+                    Write your code here, please :</br>
+                    <textarea rows = "30" cols = "100" bgcolor="black"></textarea><br>
+                    <input type="submit" value="Submit" /> 
+                    <select name="dropdown">
+                        <option value="Java" selected>java</option>
+                        <option value="Python">python</option>
+                    </select>
+                </form>
+            </div>
+        </body>         
+</html>

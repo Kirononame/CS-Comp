@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title> cs problems </title>
+        <link type="text/css" href="{{ url_for('static',filename='styles/st.css') }}" rel = "stylesheet"></link>
+    </head>    
+        <body>
+            <div id="all">
+                <center><h1><u><strong id="problem">cavity</strong></u></h1></center>
+                <marquee> Welcome to CS problems</marquee> <br/>
+                <form>
+                    Write your code here, please :</br>
+                    <textarea id="textCode" rows = "30" cols = "100" bgcolor="black">Enter the code</textarea><br>
+                    <button type="button" onclick="loadDoc()">submit</button>
+                    <select id="dd" name="dropdown">
+                        <option value="c">c</option>
+                        <option value="cs">c#</option>
+                        <option value="cpp">c++</option>
+                        <option value="java" selected>java</option>
+                        <option value="java">java8</option>
+                        <option value="js">javaScript</option>
+                        <option value="py">python</option>
+                        <option value="py">python3</option>
+                        <option value="swift">swift</option>
+                        <option value="vb">visualBasic</option>
+                    </select>
+                </form>
+                <textarea id="textGroup" cols="20" rows="1">GroupName</textarea>
+            </div>
+
+            <script type="text/javascript" src="{{ url_for('static', filename = 'main20.js') }}"></script>
+            <script type="text/javascript" src="{{ url_for('static', filename = 'time20.js') }}"></script>
+        </body>         
+</html>
